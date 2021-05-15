@@ -16,6 +16,9 @@
 		AB3E16DD264FF6C100A07081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3E16DC264FF6C100A07081 /* main.m */; };
 		AB3E16E7264FF6C200A07081 /* JQ_rw_lockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3E16E6264FF6C200A07081 /* JQ_rw_lockTests.m */; };
 		AB3E16F2264FF6C200A07081 /* JQ_rw_lockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3E16F1264FF6C200A07081 /* JQ_rw_lockUITests.m */; };
+		AB3E1710264FF74F00A07081 /* JQ_rw_lock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3E170F264FF74F00A07081 /* JQ_rw_lock.m */; };
+		AB3E17172650043700A07081 /* JQ_rw_opt_lock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3E17162650043700A07081 /* JQ_rw_opt_lock.m */; };
+		AB3E171D2650181800A07081 /* JQ_rw_operation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3E171C2650181800A07081 /* JQ_rw_operation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		AB3E16ED264FF6C200A07081 /* JQ_rw_lockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQ_rw_lockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3E16F1264FF6C200A07081 /* JQ_rw_lockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQ_rw_lockUITests.m; sourceTree = "<group>"; };
 		AB3E16F3264FF6C200A07081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB3E170E264FF74F00A07081 /* JQ_rw_lock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQ_rw_lock.h; sourceTree = "<group>"; };
+		AB3E170F264FF74F00A07081 /* JQ_rw_lock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQ_rw_lock.m; sourceTree = "<group>"; };
+		AB3E17152650043700A07081 /* JQ_rw_opt_lock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQ_rw_opt_lock.h; sourceTree = "<group>"; };
+		AB3E17162650043700A07081 /* JQ_rw_opt_lock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQ_rw_opt_lock.m; sourceTree = "<group>"; };
+		AB3E171B2650181800A07081 /* JQ_rw_operation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQ_rw_operation.h; sourceTree = "<group>"; };
+		AB3E171C2650181800A07081 /* JQ_rw_operation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQ_rw_operation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +113,7 @@
 		AB3E16C9264FF6BF00A07081 /* JQ_rw_lock */ = {
 			isa = PBXGroup;
 			children = (
+				AB3E17142650041500A07081 /* Lock */,
 				AB3E16CA264FF6BF00A07081 /* AppDelegate.h */,
 				AB3E16CB264FF6BF00A07081 /* AppDelegate.m */,
 				AB3E16CD264FF6BF00A07081 /* SceneDelegate.h */,
@@ -135,6 +145,19 @@
 				AB3E16F3264FF6C200A07081 /* Info.plist */,
 			);
 			path = JQ_rw_lockUITests;
+			sourceTree = "<group>";
+		};
+		AB3E17142650041500A07081 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				AB3E170E264FF74F00A07081 /* JQ_rw_lock.h */,
+				AB3E170F264FF74F00A07081 /* JQ_rw_lock.m */,
+				AB3E17152650043700A07081 /* JQ_rw_opt_lock.h */,
+				AB3E17162650043700A07081 /* JQ_rw_opt_lock.m */,
+				AB3E171B2650181800A07081 /* JQ_rw_operation.h */,
+				AB3E171C2650181800A07081 /* JQ_rw_operation.m */,
+			);
+			path = Lock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3E1710264FF74F00A07081 /* JQ_rw_lock.m in Sources */,
+				AB3E171D2650181800A07081 /* JQ_rw_operation.m in Sources */,
 				AB3E16D2264FF6BF00A07081 /* ViewController.m in Sources */,
+				AB3E17172650043700A07081 /* JQ_rw_opt_lock.m in Sources */,
 				AB3E16CC264FF6BF00A07081 /* AppDelegate.m in Sources */,
 				AB3E16DD264FF6C100A07081 /* main.m in Sources */,
 				AB3E16CF264FF6BF00A07081 /* SceneDelegate.m in Sources */,
